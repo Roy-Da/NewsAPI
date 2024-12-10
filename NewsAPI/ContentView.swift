@@ -8,12 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var json = "Loading"
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("goodbye, world!")
+            Text(json)
+        }
+        .task {
+            let url = URL(string: "https://www.hackingwithswift.com/samples/messages.json")!
+
+               let (data, _) = try! await URLSession.shared.data(from: url)
+            
+             json = String(decoding: data, as: UTF8.self)
         }
         .padding()
     }
