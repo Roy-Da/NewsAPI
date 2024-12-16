@@ -33,6 +33,8 @@ struct Response: Codable{
 struct Article: Codable{
     var title: String?
     var author: String?
+    var url: String?
+    var urlToImage: URL?
 }
 
 extension Article: Identifiable{

@@ -11,6 +11,11 @@
 		0DC019C82D07780000B352F6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC019C72D07780000B352F6 /* ContentView.swift */; };
 		0DC019CA2D07780200B352F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DC019C92D07780200B352F6 /* Assets.xcassets */; };
 		0DC019CD2D07780200B352F6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DC019CC2D07780200B352F6 /* Preview Assets.xcassets */; };
+		0DC019D42D0B574F00B352F6 /* FetchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC019D32D0B574F00B352F6 /* FetchData.swift */; };
+		0DC019DA2D0CB66A00B352F6 /* WebViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC019D92D0CB66A00B352F6 /* WebViewContainer.swift */; };
+		0DC019DC2D0CB67D00B352F6 /* ArticleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC019DB2D0CB67D00B352F6 /* ArticleListView.swift */; };
+		0DC019DE2D0CB6BE00B352F6 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC019DD2D0CB6BE00B352F6 /* WebView.swift */; };
+		0DC019E02D0CB71200B352F6 /* ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC019DF2D0CB71200B352F6 /* ViewState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		0DC019C72D07780000B352F6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0DC019C92D07780200B352F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0DC019CC2D07780200B352F6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0DC019D32D0B574F00B352F6 /* FetchData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchData.swift; sourceTree = "<group>"; };
+		0DC019D92D0CB66A00B352F6 /* WebViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewContainer.swift; sourceTree = "<group>"; };
+		0DC019DB2D0CB67D00B352F6 /* ArticleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListView.swift; sourceTree = "<group>"; };
+		0DC019DD2D0CB6BE00B352F6 /* WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		0DC019DF2D0CB71200B352F6 /* ViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +61,9 @@
 		0DC019C42D07780000B352F6 /* NewsAPI */ = {
 			isa = PBXGroup;
 			children = (
+				0DC019D62D0CB5F900B352F6 /* Views */,
+				0DC019D52D0CB5EE00B352F6 /* Model */,
 				0DC019C52D07780000B352F6 /* NewsAPIApp.swift */,
-				0DC019C72D07780000B352F6 /* ContentView.swift */,
 				0DC019C92D07780200B352F6 /* Assets.xcassets */,
 				0DC019CB2D07780200B352F6 /* Preview Content */,
 			);
@@ -65,6 +76,26 @@
 				0DC019CC2D07780200B352F6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0DC019D52D0CB5EE00B352F6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0DC019D32D0B574F00B352F6 /* FetchData.swift */,
+				0DC019DF2D0CB71200B352F6 /* ViewState.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0DC019D62D0CB5F900B352F6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0DC019C72D07780000B352F6 /* ContentView.swift */,
+				0DC019DD2D0CB6BE00B352F6 /* WebView.swift */,
+				0DC019D92D0CB66A00B352F6 /* WebViewContainer.swift */,
+				0DC019DB2D0CB67D00B352F6 /* ArticleListView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +169,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DC019C82D07780000B352F6 /* ContentView.swift in Sources */,
+				0DC019E02D0CB71200B352F6 /* ViewState.swift in Sources */,
+				0DC019DC2D0CB67D00B352F6 /* ArticleListView.swift in Sources */,
+				0DC019DA2D0CB66A00B352F6 /* WebViewContainer.swift in Sources */,
+				0DC019DE2D0CB6BE00B352F6 /* WebView.swift in Sources */,
+				0DC019D42D0B574F00B352F6 /* FetchData.swift in Sources */,
 				0DC019C62D07780000B352F6 /* NewsAPIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
